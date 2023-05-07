@@ -2,3 +2,33 @@ body {
     background-color: black;
     color: whitesmoke;
 }
+.title {
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    font-size: 35px;
+}
+.sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    border: 3px solid white;
+    border-radius: 50px;
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
+.workwithme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 65px;
+}
+.page1 {
+    color: white;
+    background-color: black;
+    border-style: none;
+    font-family: 'Inter', sans-serif;
+}
+.page1:hover {
+    color: white;
+}
