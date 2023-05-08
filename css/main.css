@@ -127,6 +127,21 @@
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
   }
+  .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 body {
     background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Dark-Floral-Wallpaper-HD-For-Desktop.jpg');
     background-size: cover;
@@ -139,11 +154,17 @@ body {
     font-size: 50px;
     text-shadow: 2px 2px 2px black;
 }
+.title:hover {
+    color: rgb(104, 128, 64);
+}
 .title2 {
     font-family: 'Bodoni Moda', serif;
     font-size: 60px;
     text-shadow: 2px 2px 2px black;
     text-align: center;
+}
+.title2:hover {
+    color: rgb(104, 128, 64);
 }
 .title3 {
     font-family: 'Bodoni Moda', serif;
@@ -151,11 +172,17 @@ body {
     font-size: 50px;
     text-shadow: 2px 2px 2px black;
 }
+.title3:hover {
+    color: rgb(104, 128, 64);
+}
 .title4 {
     font-family: 'Bodoni Moda', serif;
     text-align: center;
     font-size: 50px;
     text-shadow: 2px 2px 2px black;
+}
+.title4:hover {
+    color: rgb(104, 128, 64);
 }
 .title5 {
     font-family: 'Bodoni Moda', serif;
@@ -163,12 +190,18 @@ body {
     font-size: 70px;
     text-shadow: 2px 2px 2px black;
 }
+.title5:hover {
+    color: rgb(104, 128, 64);
+}
 .sub {
     font-family: 'Inter', sans-serif;
     font-size: 25px;
     text-shadow: 2px 2px 2px black;
     margin: auto;
     text-align: center;
+}
+.sub:hover {
+    color: rgb(104, 128, 64);
 }
 .page1 {
     color: white;
@@ -180,7 +213,7 @@ body {
 }
 .page1:hover {
     text-decoration: underline;
-    color: olivedrab;
+    color: white;
 }
 .box1 {
     display: grid;
@@ -201,7 +234,7 @@ body {
 }
 .abouttext {
     font-family: 'Inter', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 10px;
     text-shadow: 2px 2px 2px black;
 }
@@ -210,13 +243,14 @@ body {
     background-color: transparent;
     border-style: none;
     font-size: 50px;
-    padding-left: 150px;
+    padding-left: 140px;
+    padding-right: 50px;
     text-align: center;
     text-shadow: 2px 2px 2px black;
+    font-family: 'Inter', sans-serif;
 }
 .next1:hover {
-    text-decoration: underline;
-    color: olivedrab;
+    color: rgb(104, 128, 64);
 }
 .subtitle {
     color: white;
@@ -226,7 +260,10 @@ body {
     font-size: 35px;
 }
 .subtitle:hover {
-    color: olivedrab;
+    color: rgb(104, 128, 64);
+}
+.subtitle2:hover {
+    color: rgb(104, 128, 64);
 }
 .list {
     text-align: center;
@@ -235,33 +272,35 @@ body {
     font-size: 17px;
     text-shadow: 2px 2px 2px black;
 }
-.list:hover {
-    color: olivedrab;
-    text-transform: bold;
-}
 .next2 {
     color: white;
     background-color: transparent;
     border-style: none;
-    padding-left: 650px;
+    padding-left: 600px;
     font-size: 20px;
     text-shadow: 2px 2px 2px black;
+    font-family: 'Inter', sans-serif;
 }
 .next2:hover {
-    text-decoration: underline;
-    color: olivedrab;
+
+    color: rgb(104, 128, 64);
 }
 .next3 {
     color: white;
     background-color: transparent;
     border-style: none;
-    padding-left: 650px;
+    padding-left: 575px;
     font-size: 20px;
     text-shadow: 2px 2px 2px black;
+    font-family: 'Inter', sans-serif;
 }
 .next3:hover {
-    text-decoration: underline;
-    color: olivedrab;
+    color: rgb(104, 128, 64);
+}
+.description {
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .row {
     display: flex;
@@ -272,7 +311,7 @@ body {
 .column {
     flex: 33.33%;
     padding: 5px;
-    vertical-align: center;
+    text-align: center;
     font-family: 'Bodoni Moda', serif;
     text-shadow: 2px 2px 2px black;
 
@@ -293,7 +332,7 @@ body {
 }
 .email:hover {
     text-decoration: underline;
-    color: olivedrab;
+    color: rgb(104, 128, 64);
 }
 .phone {
     color: white;
@@ -303,5 +342,5 @@ body {
 }
 .phone:hover {
     text-decoration: underline;
-    color: olivedrab;
+    color: rgb(104, 128, 64);
 }
