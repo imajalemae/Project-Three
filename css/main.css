@@ -39,8 +39,8 @@
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    width: 200px;
-    margin-left: 500px;
+    width: 250px;
+    margin-left: 510px;
   }
   .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
     color: white;
@@ -49,12 +49,40 @@
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+  .hvr-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
 body {
     background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Dark-Floral-Wallpaper-HD-For-Desktop.jpg');
     background-size: cover;
     color: white;
+    overflow: hidden;
 }
 .title {
+    font-family: 'Bodoni Moda', serif;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px black;
+}
+.title2 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+.title3 {
     font-family: 'Bodoni Moda', serif;
     text-align: center;
     font-size: 50px;
@@ -69,11 +97,58 @@ body {
 }
 .page1 {
     color: white;
+    text-shadow: 2px 2px 2px black;
     background-color: transparent;
     border-style: none;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
 .page1:hover {
-    background-color: rgb(255, 255, 255, .5);
+    text-decoration: underline white;
+}
+.box1 {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+.box2 {
+    display: grid;
+    align-items: center;
+    margin: auto;
+    padding-right: 1px;
+}
+.imaja {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 200px;
+}
+.abouttext {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.next1 {
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    font-size: 50px;
+    padding-left: 150px;
+    text-align: center;
+}
+.next1:hover {
+    text-decoration: underline;
+}
+.subtitle {
+    color: white;
+    font-family: 'Bodoni Moda', serif;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    font-size: 45px;
+}
+.list {
+    text-align: center;
+    list-style-position: inside;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
 }
