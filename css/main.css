@@ -64,6 +64,69 @@
     -webkit-transform: translateX(8px);
     transform: translateX(8px);
   }
+  @-webkit-keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  .hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
 body {
     background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Dark-Floral-Wallpaper-HD-For-Desktop.jpg');
     background-size: cover;
@@ -97,7 +160,7 @@ body {
 .title5 {
     font-family: 'Bodoni Moda', serif;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     text-shadow: 2px 2px 2px black;
 }
 .sub {
@@ -139,6 +202,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 25px;
     padding-left: 10px;
+    text-shadow: 2px 2px 2px black;
 }
 .next1 {
     color: white;
@@ -147,6 +211,7 @@ body {
     font-size: 50px;
     padding-left: 150px;
     text-align: center;
+    text-shadow: 2px 2px 2px black;
 }
 .next1:hover {
     text-decoration: underline;
@@ -163,6 +228,7 @@ body {
     list-style-position: inside;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 .next2 {
     color: white;
@@ -170,6 +236,7 @@ body {
     border-style: none;
     padding-left: 650px;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 .next2:hover {
     text-decoration: underline;
@@ -180,11 +247,15 @@ body {
     border-style: none;
     padding-left: 650px;
     font-size: 20px;
+    text-shadow: 2px 2px 2px black;
 }
 .next3:hover {
     text-decoration: underline;
 }
 .row {
+    display: flex;
+}
+.row2 {
     display: flex;
 }
 .column {
@@ -195,7 +266,29 @@ body {
     text-shadow: 2px 2px 2px black;
 
 }
-.content {
-    background-color: rgb(0, 0, 0, 0.5);
-    padding: 10px;
+.column2 {
+    flex: 50%;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+.email {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.email:hover {
+    text-decoration: underline;
+}
+.phone {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+.phone:hover {
+    text-decoration: underline;
 }
