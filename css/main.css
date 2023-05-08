@@ -28,7 +28,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(107, 142, 35, 0.5);
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -179,7 +179,8 @@ body {
     font-size: 20px;
 }
 .page1:hover {
-    text-decoration: underline white;
+    text-decoration: underline;
+    color: olivedrab;
 }
 .box1 {
     display: grid;
@@ -215,6 +216,7 @@ body {
 }
 .next1:hover {
     text-decoration: underline;
+    color: olivedrab;
 }
 .subtitle {
     color: white;
@@ -223,12 +225,19 @@ body {
     text-align: center;
     font-size: 35px;
 }
+.subtitle:hover {
+    color: olivedrab;
+}
 .list {
     text-align: center;
     list-style-position: inside;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     text-shadow: 2px 2px 2px black;
+}
+.list:hover {
+    color: olivedrab;
+    text-transform: bold;
 }
 .next2 {
     color: white;
@@ -240,6 +249,7 @@ body {
 }
 .next2:hover {
     text-decoration: underline;
+    color: olivedrab;
 }
 .next3 {
     color: white;
@@ -251,6 +261,7 @@ body {
 }
 .next3:hover {
     text-decoration: underline;
+    color: olivedrab;
 }
 .row {
     display: flex;
@@ -282,6 +293,7 @@ body {
 }
 .email:hover {
     text-decoration: underline;
+    color: olivedrab;
 }
 .phone {
     color: white;
@@ -291,4 +303,5 @@ body {
 }
 .phone:hover {
     text-decoration: underline;
+    color: olivedrab;
 }
